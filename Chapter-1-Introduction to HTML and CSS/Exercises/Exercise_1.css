@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+img{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Images/kitchen_design.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.row{
+    display: flex;
+    height: 105%;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    right: 0;
+    bottom: 0;
+}
+
+.col{
+    flex-basis: 50%;
+    z-index: 1;
+    position: relative;
+    padding: 100px;
+    bottom: 0px;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.Method {
+    height: 150%;
+    flex-basis: 30%;
+    z-index: 30;
+    position: fixed;
+    top: 290px; /* Position at the top */
+    right: 100px; /* Position at the right */
+    padding: 150px; /* Adjust padding as needed */
+    color: white; /* Text color */
+}
+
+
+h2 {
+    font-size: 40px;
+    padding: 5px; /* Adjust padding as needed */
+    right: 200; /* Position at the right */
+}
+
+ol {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.Ingredients {
+    flex-basis: 50%;
+    position: relative;
+    top: 400px;
+    padding: 7px;
+    top: 1%; 
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+}
+
+
