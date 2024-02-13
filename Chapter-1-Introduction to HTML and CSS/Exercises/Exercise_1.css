@@ -1,10 +1,11 @@
+/* I'm setting default styles for all elements to have no margin or padding and to use the 'Roboto' font family. */
 *{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-
+/* I'm styling the background image to cover the entire viewport height and have a semi-transparent overlay. */
 img{
     width: 100%;
     height: 100vh;
@@ -13,73 +14,102 @@ img{
     background-size: cover;
 }
 
+/* I'm using flexbox to align the content vertically and horizontally within the container. */
 .row{
     display: flex;
+    /* I'm making sure there's a bit of extra height for vertical centering */
     height: 105%;
     align-items: center;
+    /* I'm positioning the row absolutely to control its placement */
     position: absolute;
     top: 0;
+    /* I'm adding a small left margin for better appearance */
     left: 10px;
     right: 0;
     bottom: 0;
 }
 
+/* I'm dividing the content into two columns, each taking up 50% of the container width. */
 .col{
     flex-basis: 50%;
-    z-index: 1;
-    position: relative;
+    /* I'm setting a z-index to control the stacking order of elements */
+    z-index: 1; 
+    /* I'm positioning the column relative to allow for absolute positioning of its children */
+    position: relative; 
+    /* I'm adding padding to create space around the content */
     padding: 100px;
+    /* I'm ensuring the content stays at the bottom of the column */
     bottom: 0px;
 }
 
+/* I'm styling the heading to have white color and a large font size. */
 h1{
     color: rgb(255, 255, 255);
     font-size: 100px;
 }
 
+/* I'm styling the subheading to have white color and a slightly smaller font size. */
 h2{
     color: rgb(255, 255, 255);
     font-size: 90px;
 }
 
+/* I'm styling the paragraph text to have white color, a moderate font size, and some spacing between lines. */
 p{
     color: rgb(255, 255, 255);
     font-size: 18px;
     line-height: 20px;
 }
 
+/* I'm styling the method section to be a fixed sidebar on the right side of the viewport. */
 .Method {
     height: 150%;
     flex-basis: 30%;
+    /* I'm setting a higher z-index to ensure it's above other content */
     z-index: 30;
+    /* I'm fixing the position of the method section */
     position: fixed;
-    top: 290px; /* Position at the top */
-    right: 100px; /* Position at the right */
-    padding: 150px; /* Adjust padding as needed */
-    color: white; /* Text color */
+    /* I'm positioning it from the top */
+    top: 290px; 
+    /* I'm positioning it from the right */
+    right: 100px; 
+    /* I'm adding padding for spacing */
+    padding: 150px; 
+    /* I'm setting the text color to white */
+    color: white; 
 }
 
-
+/* I'm styling the subheading to have white color and a slightly smaller font size. */
 h2 {
     font-size: 40px;
-    padding: 5px; /* Adjust padding as needed */
-    right: 200; /* Position at the right */
+    /* I'm adjusting the padding as needed */
+    padding: 5px; 
+    /* I position it at the right */
+    right: 200; 
 }
 
+/* I'm styling the list items to have white color, a smaller font size, and some spacing between lines. */
 ol {
     color: rgb(255, 255, 255);
     font-size: 13px;
     line-height: 25px;
 }
 
+/* I'm styling the ingredients section to be positioned relatively below the content, adding some padding for spacing. */
 .Ingredients {
+    /* I'm setting its size to occupy half the width of its container */
     flex-basis: 50%;
+    /* I'm positioning it relative to its normal position */
     position: relative;
+    /* I'm moving it down from the top */
     top: 400px;
+    /* I'm adding padding for spacing */
     padding: 7px;
+    /* This seems to be a duplicate rule */
     top: 1%; 
 }
 
+/* I'm styling the subheading for the ingredients section to have white color and a small font size. */
 h3 {
     color: rgb(255, 255, 255);
     font-size: 13px;
