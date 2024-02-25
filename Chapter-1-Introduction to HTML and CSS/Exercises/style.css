@@ -1,3 +1,4 @@
+/* Importing fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Lemon&family=Patua+One&family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
 * {
     padding: 0;
@@ -14,16 +15,6 @@ body {
     background-color: white;
 }
 
-/* Other CSS styles remain the same */
-
-
-/* nav{
-    z-index: 10;
-    position: sticky;
-    top: 0;
-    margin-top: 10px;
-    
-} */
 nav .wrapper{
     position: absolute;
     top: 0;
@@ -175,9 +166,6 @@ section{
 }
 
 
-
-
-
 /* Food Details */
 
 .details-foods{
@@ -264,7 +252,3 @@ section{
 .details-foods .foods .card .discription ul li {
     margin-bottom: 5px; /* Add margin between list items */
 }
-
-
-
-
