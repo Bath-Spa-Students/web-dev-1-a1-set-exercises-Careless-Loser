@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Lemon&family=Patua+One&family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw; /* Adjusted to viewport width */
+    overflow-x: hidden;
+    height: auto;
+    position: relative;
+    background-color: white;
+}
+
+/* Other CSS styles remain the same */
+
+
+/* nav{
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    margin-top: 10px;
+    
+} */
+nav .wrapper{
+    position: absolute;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+}
+
+nav .nav-container{
+    width: 100%;
+    height: 100%;
+    margin:  0 60px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .nav-container img{
+    width: 60px;
+}
+
+nav .nav-container .links a{
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: 0.2s linear;
+}
+
+nav .nav-container .links a:hover{
+    color: rgb(124, 123, 123);
+    
+}
+
+nav .nav-container .search {
+    width: 320px;
+    box-shadow: 1px 1px 20px white;
+    height: 5vh;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid white;
+}
+nav .nav-container .search input{
+    width: 86%;
+    padding-left: 15px;
+    font-size: 1    rem;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;   
+}
+nav .nav-container .search i{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    width: 14%;
+    cursor: pointer;
+    height: 100%;
+}
+
+
+section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+/* landing page */
+
+.landingpage{
+    background-image: url(images/back.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landingpage .content{
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landingpage .content .heading{
+    margin-top: -100px;
+    max-width:460px ;
+    width: 100%;
+}
+   
+.landingpage .content .heading h1{
+    color: black;
+    line-height: -2rem;
+    font-size: 4.5rem;
+}
+.landingpage .content .heading p{
+    color: black;
+    font-size: 1.2rem;
+}
+
+.landingpage .content .image img{
+    width: 700px;
+    transform: rotate(40deg);
+}
+
+
+
+/* Method section */
+.method {
+    box-shadow: -5px -5px 100px black;
+    background: black;
+    min-height: 165vh; /* Set minimum height to 100% of the viewport height */
+    padding-bottom: 100px; /* Add padding to create space for scrolling */
+}
+
+.method .container {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+
+.method .container .method-content {
+    color: white;
+    width: 30%;
+}
+
+.method .container .method-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Patua One', serif;
+    color: rgb(156, 46, 6);
+    letter-spacing: 1px;
+    font-size: 4rem;
+}
+
+.method .container .method-content p {
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+
+
+
+
+/* Food Details */
+
+.details-foods{
+    background-color: black;
+}
+
+.details-foods .title{
+    width: 100%;
+    margin: 30px 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.details-foods .title h1{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    width: 40%;
+}
+
+.details-foods .foods{
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.details-foods .foods .card{
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details-foods .foods:hover .card{
+    scale: 1.1;
+    transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.details-foods .foods:hover .card:not(:hover){
+    opacity: 0.2;
+    backdrop-filter: blur(10px);
+    scale: 1;
+}
+
+
+.details-foods .foods .card {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+.details-foods .foods .card img {
+    width: 450px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.details-foods .foods .card .discription{
+    color: white;
+    margin:0 10px;
+}
+.details-foods .foods .card .discription h2{
+    
+    font-family: 'Patua One', serif;
+    letter-spacing: 1px;
+    margin: 8px 0;
+    text-align: left;
+}
+
+.details-foods .foods .card .discription p {
+    float: left;
+    margin-left: 10px;
+}
+
+.details-foods .foods .card .discription ul {
+    padding-left: 20px; /* Add padding to the left of the list */
+}
+
+.details-foods .foods .card .discription ul li {
+    margin-bottom: 5px; /* Add margin between list items */
+}
+
+
+
+
