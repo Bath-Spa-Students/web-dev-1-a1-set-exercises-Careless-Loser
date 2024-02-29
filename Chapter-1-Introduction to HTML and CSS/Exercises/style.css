@@ -29,6 +29,8 @@ nav .nav-container{
     position: center;
     display: block;
     justify-content: space-around;
+    padding-top: 60px;
+    padding-left: 90px;
     align-items: center;
 }
 
