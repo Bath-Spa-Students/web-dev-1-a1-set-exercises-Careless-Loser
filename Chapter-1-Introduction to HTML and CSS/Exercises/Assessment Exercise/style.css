@@ -1,0 +1,62 @@
+/* styles.css */
+
+/* Body Styles */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('Image/Background.png'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */}
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Recipe Info Styles */
+.recipe-info {
+    width: calc(50% - 10px); /* 50% width with a little padding */
+    padding-right: 10px; /* Spacing between recipe info and steps */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Recipe Steps Styles */
+.recipe-steps {
+    width: calc(50% - 10px); /* 50% width with a little padding */
+    padding-left: 10px; /* Spacing between recipe info and steps */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Heading Styles */
+h1, h2 {
+    color: #ffffff;
+}
+
+/* Paragraph Styles */
+p {
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+/* List Styles */
+ul, ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+/* List Item Styles */
+li {
+    color: #ffffff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
