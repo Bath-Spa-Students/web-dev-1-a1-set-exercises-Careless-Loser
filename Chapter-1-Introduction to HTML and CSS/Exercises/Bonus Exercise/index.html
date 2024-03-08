@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Quick Reference Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 id="html_css_block">
+    HTML and CSS Quick Reference Guide
+</h1>
+<hr>
+<h2 id="Head_Body_Section">
+    Head & Body Sections
+</h2>
+
+<p>
+    head section contains information that describes the web page document.
+</p>
+
+<pre><code>&lt;head&gt;
+    &lt;title&gt;Page Title Goes Here&lt;/title&gt;
+    &lt;meta charset="utf-8"&gt;
+&lt;/head&gt;</code></pre>
+
+<p>The body section contains text and elements that display in the web page document.</p>
+<pre><code>&lt;body&gt;
+    ... body text and more HTML5 tags go here ...
+&lt;/body&gt;</code></pre>
+<p>
+    ... body text and more HTML5 tags go here ...
+</p>
+<hr>
+<h2>Heading Element</h2>
+<p>Use heading elements to define headings of different sizes.</p>
+
+<pre><code>
+&lt;h1&gt;Heading Level 1&lt;/h1&gt;
+
+&lt;h2&gt;Heading Level 2&lt;/h2&gt;
+
+&lt;h3&gt;Heading Level 3&lt;/h3&gt;
+
+&lt;h4&gt;Heading Level 4&lt;/h4&gt;
+
+&lt;h5&gt;Heading Level 5&lt;/h5&gt;
+
+&lt;h6&gt;Heading Level 6&lt;/h6&gt;
+
+</code></pre>
+
+<h1>Heading Level 1</h1>
+<h2>Heading Level 2</h2>
+<h3>Heading Level 3</h3>
+<h4>Heading Level 4</h4>
+<h5>Heading Level 5</h5>
+<h6>Heading Level 6</h6>
+<hr>
+<h2>Paragraph Element</h2>
+
+<pre><code>&lt;p&gt;
+    This is a paragraph element.
+&lt;/p&gt;</code></pre>
+<p>This is a paragraph element.</p>
+<p>The paragraph element groups sentences and sections of text together.</p>
+<hr>
+<h2>Line Break Element</h2>
+<p>The line break element causes the next element or text to display on a new line.</p>
+<pre><code>This is some text &lt;br&gt;
+This starts on a new line.</code></pre>
+<hr>
+<h2>Blockquote Element</h2>
+<p>The blockquote element indents a block of text for special emphasis.</p>
+<pre><code>&lt;blockquote&gt;
+    This is a blockquote element. 
+    It indents a block of text for special emphasis.
+&lt;/blockquote&gt;</code></pre>
+
+<blockquote>
+This is a blockquote element.<br> 
+It indents a block of text for special emphasis.
+</blockquote>
+<hr>
+<h2>Phrase Elements</h2>
+    <p>Indicate the context and meaning of the text.</p>
+    <table>
+        <tr>
+            <th>Code</th>
+            <th>Example</th>
+            <th>Description</th>
+            
+        </tr>
+        <tr>
+            <td><pre><code>&lt;b&gt;</code></pre></td>
+            <td><b>Bold text</b></td>
+            <td>Text that has no extra importance but is styled in bold font by usage and convention.</td>
+        </tr>
+        <tr>
+            <td><pre><code>&lt;em&gt;</code></pre></td>
+            <td><em>Emphasized text</em> </td>
+            <td>Causes text to be emphasized in relation to other text; usually displayed in italics.</td>
+        </tr>
+        <tr>
+            <td><pre><code>&lt;i&gt;</code></pre></td>
+            <td><i>Italicized text</i></td>
+            <td>Text that has no extra importance but is styled in italics by usage and convention.</td>
+        </tr>
+        <tr>
+            <td><pre><code>&lt;mark&gt;</code></pre></td>
+            <td><mark>Marked text</mark> </td>
+            <td>Text that is highlighted in order to be easily referenced.</td>
+        </tr>
+        <tr>
+            <td><pre><code>&lt;small&gt;</code></pre></td>
+            <td><small>Small text</small> </td>
+            <td>Legal disclaimers and notices (“fine print”) displayed in small font-size.</td>
+        </tr>
+        <tr>
+            <td><pre><code>&lt;strong&gt;</code></pre></td>
+            <td><strong>Strong text</strong></td>
+            <td>Strong importance; causes text to stand out from surrounding text; usually displayed in bold.</td>
+        </tr>
+        <tr>
+            <td><pre><code>&lt;sub&gt;</code></pre></td>
+            <td>H<sub>2</sub>O</td>
+            <td><b>Subscript</b> displays a subscript as small text below the baseline.</td>
+        </tr>
+        <tr>
+            <td><pre><code>&lt;sup&gt;</code></pre></td>
+            <td>x<sup>2</sup></td>
+            <td><b>Superscript</b> displays a superscript as small text above the baseline.</td>
+        </tr>
+    </table>
+<br>
+<hr>
+<h2>Proper Nesting Example</h2>
+<p>Example of properly nested elements:</p>
+<pre><code>&lt;p&gt;&lt;i&gt;Call for a free quote for your web development needs: &lt;strong&gt; 000 0000 0000 &lt;/strong&gt;&lt;/i&gt;&lt;/p&gt;</code></pre>
+
+<p>
+    <i>
+    Call for a free quote for your web developmwnt needs:
+    <strong>
+        000 0000 0000
+    </strong>
+    </i>
+</p>
+<hr>
+<h2>HTML Lists</h2>
+
+<h3>Unordered List</h3>
+
+<p>An unordered list displays a bullet before each entry.</p>
+<pre><code>&lt;p&gt;
+    An unordered list of network protocols:
+&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;TCP&lt;/li&gt;
+    &lt;li&gt;IP&lt;/li&gt;
+    &lt;li&gt;HTTP&lt;/li&gt;
+    &lt;li&gt;FTP&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+<p>An unordered list of network protocols:</p>
+<ul>
+    <li>TCP</li>
+    <li>IP</li>
+    <li>HTTP</li>
+    <li>FTP</li>
+</ul>
+
+<h3>Ordered List</h3>
+<p>An ordered list displays numbers or letters before each entry.</p>
+<pre><code>&lt;p&gt;
+    An ordered list for getting an addmission:
+&lt;/p&gt;
+    
+&lt;ol&gt;
+    &lt;li&gt;Apply to school&lt;/li&gt;
+    &lt;li&gt;Register for course&lt;/li&gt;
+    &lt;li&gt;Pay tuition&lt;/li&gt;
+    &lt;li&gt;Attend course&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+<p>An ordered list for getting an addmission:</p>
+<ol>
+    <li>Apply to school</li>
+    <li>Register for course</li>
+    <li>Pay tuition</li>
+    <li>Attend course</li>
+</ol>
+<hr>
+<h3>Description List</h3>
+<p>A description list is useful to display a list of terms and descriptions.</p>
+<pre><code>&lt;dl&gt;
+    &lt;dt&gt;IP&lt;/dt&gt;
+    &lt;dd&gt;Internet Protocol&lt;/dd&gt;
+    &lt;dt&gt;TCP&lt;/dt&gt;
+    &lt;dd&gt;Transmission Control Protocol&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+
+<dl>
+    <dt>IP</dt>
+    <dd>Internet Protocol</dd>
+    <dt>TCP</dt>
+    <dd>Transmission Control Protocol</dd>
+</dl>
+<hr>
+<h2>Anchor Element - Adding Links</h2>
+<p>Specifies a hyperlink reference href to a piece of content on your own or another website.</p>
+<pre><code>&lt;a href="https://www.uhdpaper.com/2020/11/81491-cat-cute-bow-tie-4k.html"&gt;Cat with a bow wallpaper&lt;/a&gt;</code></pre>
+<a href="https://www.uhdpaper.com/2020/11/81491-cat-cute-bow-tie-4k.html">Cat with a bow wallpaper</a>
+<br>
+<hr>
+<h2>Image Element - Adding/Linking Images</h2>
+<p>The &lt;img&gt; allows you to insert images into your web pages. The &lt;alt&gt; attribute specifies an alternate
+text for an image.</p>
+<pre><code>&lt;img src="Image/4cats.jpg" alt="Cats"&gt;</code></pre>
+<img src="Image/4cats.jpg" alt="Cats">
+
+<hr>
+
+<h2>Div Element</h2>
+<p>The &lt;div&gt; element configures a structural block area or "division" on a web page with empty space above
+and below. You can use CSS to style and position the divs by adding class and/or id attributes to your div elements. This is the foundation for CSS-based page layouts.</p>
+<pre><code>&lt;div class="description"&gt;
+    &lt;h1&gt;This is the first heading&lt;/h1&gt;
+    &lt;p&gt;Description Here&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+<div class="description">
+    <h1>This is the first heading</h1>
+    <p>Description Here</p>
+</div>
+
+<hr>
+
+<h2>Span Element</h2>
+<p>The &lt;span&gt; is an inline element that is often used as a container for some text. It is used to style parts of the text.</p>
+<p>The span element is similar to div; the difference is that div is a block-level element, whereas span is an inline element.</p>
+<p>Block-level Elements: Always start on a new line. Intended for holding standalone blocks of content, such as paragraphs of text.</p>
+<p>Inline Elements: Intended to hold smaller pieces of content within a larger block of content, such as a few words or a sentence.</p>
+<pre><code>&lt;h2&gt;Some &lt;span style="color:red"&gt;Important&lt;/span&gt; Message&lt;/h2&gt;</code></pre>
+<h2>This is an 
+    <span style="color:red">
+        important
+    </span> 
+    message!
+</h2>
+<hr>
+<h2>Formatting Tags and Special Characters</h2>
+<table>
+    <tr>
+        <th>Code</th>
+        <th>Characters</th>
+    </tr>
+    <tr>
+        <td><pre><code>&amp;copy;</code></pre></td>
+        <td>&copy;</td>
+    </tr>
+    <tr>
+        <td><pre><code>&amp;lt;</code></pre></td>
+        <td>&lt;</td>
+    </tr>
+    <tr>
+        <td><pre><code>&amp;gt;</code></pre></td>
+        <td>&gt;</td>
+    </tr>
+    <tr>
+        <td><pre><code>&amp;amp;</code></pre></td>
+        <td>&amp;</td>
+    </tr>
+    <tr>
+        <td><pre><code>&amp;&amp;nbsp;</code></pre></td>
+        <td>&nbsp; Adds empty space</td>
+    </tr>
+</table>
+<hr>
+<h2 id="css">CSS: Cascading Style Sheets</h2>
+<p>CSS (Cascading Style Sheets) allows you to define styles for web pages. It targets elements using selectors, which allows you to target specific elements and apply the same style to them.</p>
+<hr>
+<h3>CSS STRUCTURE (syntax)</h3>
+<pre><code>Selector {
+    Property 1: value;
+    Property 2: value;
+    Property 3: value;
+}</code></pre>
+
+<hr>
+<h3>Applying CSS into HTML</h3>
+
+<h4>Inline CSS</h4>
+<p>To apply a distinct style to a single HTML element. Inline CSS makes use of an HTML element's style attribute.</p>
+<pre><code>&lt;h1 style="color: White;"&gt;
+    Hello World!
+&lt;/h1&gt;</code></pre>
+
+<h4>Internal CSS</h4>
+<p>To define a distinct style to a single HTML page. Internal CSS is defined in the &lt;head&gt; section of an HTML page, within a &lt;style&gt; element.</p>
+<pre><code>&lt;style&gt;
+    body {
+        background-color: White;
+    }
+&lt;/style&gt;</code></pre>
+
+<h4>External CSS</h4>
+<p>Many HTML pages use an external style sheet to customize their website. To use an external style sheet, include a link to it in the &lt;head&gt; section of each HTML page.</p>
+<pre><code>&lt;head&gt;
+    &lt;link rel="stylesheet" href="name_of_the_css_file.css"&gt;
+&lt;/head&gt;</code></pre>
+<hr>
+<h3>CSS Selectors</h3>
+
+<h4>Element Selector</h4>
+<p>Used to select HTML elements based on their names. (Example: h1, p, a)</p>
+<pre><code>h1 {
+    color: Black;
+}</code></pre>
+
+<h4>ID Selector</h4>
+<p>The id selector uses an HTML element's id attribute to select a specific element. There can only be one element with the same id.</p>
+<pre><code>#heading {
+    text-align: center;
+}</code></pre>
+<br>
+<br>
+</body>
+</html>
