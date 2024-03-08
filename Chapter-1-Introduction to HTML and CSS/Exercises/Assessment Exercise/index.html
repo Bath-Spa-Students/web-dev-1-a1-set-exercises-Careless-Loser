@@ -1,59 +1,263 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favorite Cake Recipe</title>
-    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Linking Font Awesome library for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- Linking Animate On Scroll library for scroll animations -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<!-- Linking local CSS file for custom styles -->
+<link rel="stylesheet" href="style.css">
+    <title>
+        Food Website
+    </title>
 </head>
+
 <body>
-
-    <div class="container">
-        <div class="column">
-            <!-- Recipe Name -->
-            <h1>Chocolate Fudge Cake</h1>
-            <hr>
-            <!-- Recipe Description -->
-            <p>
-                This indulgent chocolate fudge cake is moist, rich, and utterly delicious. 
-            <br>    
-            Perfect for any occasion, it's sure to satisfy your chocolate cravings!</p>
-
-            <!-- Ingredients -->
-            <h2>Ingredients</h2>
-            <hr>
-            <br>
-            <ul>
-                <li>2 cups all-purpose flour</li>
-                <li>1¾ cups granulated sugar</li>
-                <li>¾ cup unsweetened cocoa powder</li>
-                <li>1½ teaspoons baking powder</li>
-                <li>1½ teaspoons baking soda</li>
-                <li>1 teaspoon salt</li>
-                <li>2 eggs</li>
-                <li>1 cup whole milk</li>
-                <li>½ cup vegetable oil</li>
-                <li>2 teaspoons vanilla extract</li>
-                <li>1 cup boiling water</li>
-            </ul>
-        
-            <!-- Method -->
-            <h2>Method</h2>
-            <hr>
-            <br>
-            <ol>
-                <li>Preheat your oven to 350°F (175°C). Grease and flour two 9-inch round cake pans.</li>
-                <li>In a large mixing bowl, combine flour, sugar, cocoa powder, baking powder, baking soda, and salt.</li>
-                <li>Add eggs, milk, oil, and vanilla extract to the dry ingredients. Mix until well combined.</li>
-                <li>Gradually stir in boiling water until the batter is smooth. The batter will be thin, but that's okay!</li>
-                <li>Pour the batter evenly into the prepared cake pans.</li>
-                <li>Bake in preheated oven for 30 to 35 minutes, or until a toothpick inserted into the center comes out clean.</li>
-                <li>Remove cakes from oven and allow them to cool in the pans for 10 minutes.</li>
-                <li>After 10 minutes, transfer the cakes to wire racks to cool completely.</li>
-                <li>Once cooled, frost with your favorite chocolate frosting and enjoy!</li>
-            </ol>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="wrapper">
+            <div class="nav-container">
+                <!-- Navigation links -->
+                <div class="links">
+                    <!-- Link to home section -->
+                    <a href="#">
+                        Home
+                    </a>
+                    <!-- Link to ingredients section -->
+                    <a href="#ingredients">
+                        Ingredients
+                    </a> 
+                    <!-- Link to method section -->
+                    <a href="#method">
+                        Method
+                    </a> 
+                </div>
+            </div>
         </div>
-    </div>
+    </nav>
 
+    <!-- Landing page section -->
+    <section class="landingpage">
+        <div class="content">
+            <!-- Heading and description -->
+            <div class="heading" data-aos="fade-right" data-aos-duration="2000">
+                <!-- Title -->
+                <h1>
+                    Freshness
+                    <br>
+                    in every bite
+                </h1> 
+                <!-- Description -->
+                <p>
+                    Classic butter chicken with tender chicken pieces cooked in a 
+                    rich and creamy tomato-based sauce, infused with aromatic spices.
+                </p> 
+            </div>           
+            <!-- Image -->
+            <div class="image">
+                <img src="images/main.png" data-aos="zoom-in" data-aos-duration="2000">
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients section -->
+    <section id="ingredients" class="details-foods">
+        <!-- Title -->
+        <div class="title">
+            <h1 data-aos="fade-left" data-aos-duration="1000" >
+                Ingredients
+            </h1>
+        </div>
+        <div class="foods">
+            <!-- Dry ingredients card -->
+            <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                <!-- Image -->
+                <img src="images/dry.jpg" alt="">
+                <!-- Description -->
+                <div class="discription">
+                    <h2> 
+                        Dry Ingredients:
+                    </h2>
+                    <!-- List of dry ingredients -->
+                    <p>
+                        <ul>
+                            <li>1 teaspoon turmeric</li>
+                            <li>1 teaspoon garam masala</li>
+                            <li>1 teaspoon ground cumin</li>
+                            <li>1 teaspoon paprika</li>
+                            <li>2 cloves garlic, minced</li>
+                            <li>1 large onion, finely chopped</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+                <!-- Liquid ingredients card -->
+                <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <!-- Image -->
+                <img src="images/liquid.jpg" alt="">
+                <!-- Description -->
+                <div class="discription">
+                    <h2>
+                        Liquid Ingredients:
+                    </h2>
+                    <!-- List of liquid ingredients -->
+                    <p><ul>
+                        <li>1 cup yogurt</li>
+                        <li>1 tablespoon lemon juice</li>
+                        <li>1 cup tomatoes</li>
+                        <li>1/2 cup heavy cream</li>
+                        <li>2 tablespoons butter</li>
+                        <li>1 tablespoon vegetable oil or ghee</li>
+                        <li>1 teaspoon minced ginger</li>
+                    </ul>
+                </p>
+                </div>
+            </div>
+                <!-- Other ingredients card -->
+                <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <!-- Image -->
+                <img src="images/other.jpg" alt="">
+                <!-- Description -->
+                <div class="discription">
+                    <h2>
+                        Other:
+                    </h2>
+                    <!-- List of other ingredients -->
+                    <p>
+                        <ul>
+                            <li>1 lb (450g) boneless, skinless chicken thighs or 
+                            <br>breasts, cut into bite-sized pieces</li>
+                            <li>Fresh cilantro leaves for garnish</li>
+                            <li>Cooked rice or naan bread, for serving</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Method section -->
+    <section id="method" class="method">
+        <div class="container">
+            <!-- Image -->
+            <img src="images/method.png" data-aos="zoom-out" data-aos-duration="1000">
+            <!-- Method content -->
+            <div class="method-content">
+                <!-- Title -->
+                <h1 data-aos="fade-left" data-aos-duration="1000">
+                    Method
+                </h1>
+                <!-- Method steps -->
+                <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <ol data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        <!-- List of method steps -->
+                        <li>
+                            <p>
+                                Marinate the Chicken:
+                            </p>
+                                In a bowl, mix together yogurt, lemon juice, turmeric, garam masala, 
+                                ground cumin, paprika, minced garlic, and minced ginger.
+                                Add the boneless, skinless chicken thighs or breasts 
+                                (cut into bite-sized pieces) to the marinade.
+                                Cover the bowl and refrigerate for at least 1 hour, 
+                                preferably overnight.
+                        </li>
+                            <br>
+                        <li>
+                            <p>
+                                Preheat the Oven:
+                            </p>
+                                Preheat your oven to 400°F (200°C).
+                        </li>
+                            <br>
+                        <li>
+                            <p>
+                                Bake the Chicken:
+                            </p>
+                            Place the marinated chicken pieces on a baking sheet.
+                            Bake for 20-25 minutes or until the chicken is cooked through.
+                        </li>
+                            <br>
+                        <li>
+                            <p>
+                                Prepare the Sauce:
+                            </p>
+                            In a large skillet, melt butter over medium heat.
+                            Add finely chopped onion to the skillet and cook until translucent.
+                            Stir in tomato puree and cook for 5 minutes.
+                            Add heavy cream to the skillet and simmer for another 5 minutes.
+                        </li>
+                            <br>
+                        <li>
+                            <p>
+                                Combine Chicken and Sauce:
+                            </p>
+                            Once the chicken is baked, add it to the skillet with the sauce.
+                            Cook for an additional 10 minutes, stirring occasionally to ensure 
+                            the chicken is coated in the sauce and heated through.
+                        </li>
+                            <br>
+                        <li>
+                            <p>
+                                Season and Garnish:
+                            </p>
+                            Season with salt to taste.
+                            Garnish with fresh cilantro leaves before serving.
+                        </li>
+                            <br>
+                        <li>
+                            <p>
+                                Serving:
+                            </p>
+                            Serve the butter chicken hot, garnished with fresh cilantro leaves.
+                            Enjoy with cooked rice or naan bread on the side.
+                            This method will help you create a delicious butter chicken dish with tender chicken pieces in a 
+                            rich and creamy tomato-based sauce, infused with aromatic spices. Enjoy your meal!
+                        </li>
+                            <br>
+                    </ol>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AOS Library script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Smooth scrolling script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Getting elements for smooth scrolling
+            var homeButton = document.querySelector(".links a[href='#']");
+            var ingredientsButton = document.querySelector(".links a[href='#ingredients']");
+            var methodButton = document.querySelector(".links a[href='#method']");
+
+            // Adding smooth scrolling behavior to each button
+            homeButton.addEventListener("click", function(event) {
+                event.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+
+            ingredientsButton.addEventListener("click", function(event) {
+                event.preventDefault();
+                document.querySelector("#ingredients").scrollIntoView({
+                    behavior: "smooth"
+                });
+            });
+
+            methodButton.addEventListener("click", function(event) {
+                event.preventDefault();
+                document.querySelector("#method").scrollIntoView({
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
 </body>
 </html>
