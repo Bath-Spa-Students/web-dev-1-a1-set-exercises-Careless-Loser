@@ -2,81 +2,182 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>CS:GO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <!-- Linking Font Awesome library for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <!-- Linking Animate On Scroll library for scroll animations -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   </head>
-  <body>
 
-    <nav class = "navbar">
-      <button type = "button" class = "btn-bars">
-        MENU <span><i class = "fas fa-bars"></i></span>
-      </button>
-
-      <div class = "navbar-collapse">
-        <span class = "btn-close">
-          <i class = "fas fa-times"></i>
-        </span>
-
-        <ul class="navbar-nav">
-          <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-              <a href="about.html" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-              <a href="tournaments.html" class="nav-link">Tournaments</a>
-          </li>
-          <li class="nav-item">
-              <a href="https://www.counter-strike.net/news" class="nav-link">News</a>
-          </li>
-          <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
-          </li>
-      </ul>
-      
-
-        <p class = "nav-para">Dive into the heart of competition in Counter-Strike: Global Offensive. Experience intense teamwork and precision gameplay, where victory awaits the boldest</p>
-        <div class = "nav-social-icons">
-          <a href = "https://www.facebook.com/CSGOworld.online/"><i class = "fab fa-facebook-f"></i></a>
-          <a href = "https://twitter.com/csgo"><i class = "fab fa-twitter"></i></a>
-          <a href = "https://www.instagram.com/csgo_dev/"><i class = "fab fa-instagram"></i></a>
-          <a href = "https://www.twitch.tv/directory/category/counter-strike"><i class = "fab fa-twitch"></i></a>
-          </div>
-      </div>
-    </nav>
-
-    <!-- header -->
-    <header class = "header">
-      <a href = "index.html" class = "site-name">
-      CS:<span>GO</span>
-      </a>
-      <div class = "header-wrapper">
-        <h3>Counter-Strike: Global Offensive</h3>
-        <h1>"We're a creative powerhouse, crafting intense gaming experiences and forging competitive strategies that leave a lasting impact."</h1>
-
-        <div class = "header-links">
-        <a href = "https://www.counter-strike.net/">more about us</a>
+  <!-- Navigation bar -->
+  <nav>
+    <div class="wrapper">
+        <div class="navbar-nav">
+            <!-- Navigation links -->
+            <div class="links">
+                <!-- Link to home section -->
+                <a href="#">
+                    Home
+                </a>
+                <!-- Link to about section -->
+                <a href="#about">
+                    About
+                </a> 
+                <!-- Link to tournaments section -->
+                <a href="#tournaments">
+                    Tournaments
+                </a> 
+                <!-- Link to contact section -->
+                <a href="#contact">
+                    Contact
+                </a> 
+            </div>
         </div>
+    </div>
+</nav>
 
-        <div class = "header-social-links">
-          <a href = "https://www.facebook.com/CSGOworld.online/"><i class = "fab fa-facebook-f"></i>
-          <span>Facebook</span></a>
-          <a href = "https://twitter.com/csgo"><i class = "fab fa-twitter"></i>
-          <span>Twitter</span></a>
-          <a href = "https://www.instagram.com/csgo_dev/"><i class = "fab fa-instagram"></i>
-          <span>Instagram</span></a>
-          <a href = "https://www.twitch.tv/directory/category/counter-strike"><i class = "fab fa-twitch"></i>
-          <span>Twitch</span></a>
-    
+<!-- Landing page section -->
+<section class="landingpage">
+    <div class="content">
+        <!-- Heading and description -->
+        <div class="heading" data-aos="fade-right" data-aos-duration="2000">
+            <!-- Title -->
+            <h1>
+                Counter-Strike:
+                <br>
+                Global Offensive
+            </h1> 
+            <hr>
+            <br>
+            <!-- Description -->
+            <p>
+                "We're a creative powerhouse, crafting intense gaming experiences and forging competitive strategies that leave a lasting impact."
+            </p> 
+
+        </div>           
+    </div>
+</section>
+
+ <!-- About section -->
+ <section id="about" class="about">
+    <div class="container">
+        <!-- about content -->
+        <div class="about-content">
+            <!-- Title -->
+            <h1 data-aos="fade-left" data-aos-duration="1000">
+                About
+            </h1>
+            <!-- About -->
+            <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                Counter-Strike: Global Offensive (CS:GO) is a multiplayer 
+                    <br>first-person shooter video game developed by Valve and Hidden Path Entertainment. 
+                    <br>It is the fourth game in the Counter-Strike series. 
+                    <br><br>CS:GO pits two teams against each other: 
+                    <br>The Terrorists and the Counter-Terrorists. 
+                    <br><br>The game features classic modes like Bomb Defusal and Hostage Rescue, 
+                    <br>where teams compete to complete objectives or eliminate the opposing team.
+                    <br>
+                    CS:GO is renowned for its competitive gameplay, requiring strategy, teamwork, and precise aiming skills. 
+                    <br>It has a thriving esports scene, with professional players and teams competing in tournaments worldwide. 
+                    <br>The game continues to receive updates and new content, keeping its community engaged and active.
+                    <br>
+                    With millions of active players and a dedicated fanbase, 
+                    <br>CS:GO remains one of the most popular and influential multiplayer games in the world.
+            </p>
         </div>
-      </div>
-    </header>
-    <!-- end of header -->
-    
-    <script src = "script.js"></script>
-  </body>
+    </div>
+</section>
+
+<!-- Tournaments section -->
+<section id="tournaments" class="tournaments">
+    <div class="container">
+        <!-- tournaments content -->
+        <div class="tournaments-content">
+            <!-- Title -->
+            <h1 data-aos="fade-left" data-aos-duration="1000">
+                Tournaments
+            </h1>
+            <!-- Tournaments -->
+        <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">Upcoming Tournaments</h2>
+        <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            Tournament 1: Mar 1st - Mar 4th 2024, Monterrey, Mexico<br>
+            Tournament 2: Mar 6th - Mar 10th 2024, Europe (Online)<br>
+            Tournament 3: Mar 17th - Mar 20th 2024, Copenhagen, Denmark
+        </p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <!-- contact content -->
+        <div class="contact-content">
+            <!-- Title -->
+            <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">Counter-Strike: Global Offensive</h3>
+        <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">Contact for CS:GO headquaters</h1>
+        <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <b>Email:</b> csgoteamfeedback@valvesoftware.com<br>
+            <b>Headquarters:</b> Bellevue, Washington, United States<br>
+            <b>Founders:</b> Jeff Pobst, Dave McCoy, Michael Austin, Mark Terrano, Jim Garbarini<br>
+            <br>
+            We love to hear from fans of our games and we’re interested in your opinions of our products. 
+            <br>However, we ask that you do not submit game proposals or ideas.
+    </p>
+        </div>
+    </div>
+</section>
+
+ <!-- AOS Library script -->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+     AOS.init();
+ </script>
+
+ <!-- Smooth scrolling script -->
+ <script>
+     document.addEventListener("DOMContentLoaded", function() {
+         // Getting elements for smooth scrolling
+         var homeButton = document.querySelector(".links a[href='#']");
+         var aboutButton = document.querySelector(".links a[href='#about']");
+         var tournamentsButton = document.querySelector(".links a[href='#tournaments']");
+         var contactButton = document.querySelector(".links a[href='#contact']");
+
+         // Adding smooth scrolling behavior to each button
+         homeButton.addEventListener("click", function(event) {
+             event.preventDefault();
+             window.scrollTo({
+                 top: 0,
+                 behavior: "smooth"
+             });
+         });
+
+         aboutButton.addEventListener("click", function(event) {
+             event.preventDefault();
+             document.querySelector("#about").scrollIntoView({
+                 behavior: "smooth"
+             });
+         });
+
+         tournamentsButton.addEventListener("click", function(event) {
+             event.preventDefault();
+             document.querySelector("#tournaments").scrollIntoView({
+                 behavior: "smooth"
+             });
+         });
+     });
+
+     contactButton.addEventListener("click", function(event) {
+             event.preventDefault();
+             document.querySelector("#contact").scrollIntoView({
+                 behavior: "smooth"
+             });
+         });
+ </script>
+</body>
 </html>
