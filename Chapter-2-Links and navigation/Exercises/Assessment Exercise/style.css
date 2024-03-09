@@ -168,7 +168,7 @@ section{
 }
 
 /* Contact section */
-.tournaments {
+.contact {
     box-shadow: -5px -5px 100px black;
     background: black;
     min-height: 10vh; /* Set minimum height to 100% of the viewport height */
