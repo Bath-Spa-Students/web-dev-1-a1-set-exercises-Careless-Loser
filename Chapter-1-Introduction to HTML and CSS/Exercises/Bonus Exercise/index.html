@@ -1,42 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML and CSS Quick Reference Guide</title>
-    <link rel="stylesheet" href="style.css">
+<!DOCTYPE html> <!-- Document type declaration -->
+<html lang="en"> <!-- HTML root element with language attribute -->
+<head> <!-- Head section containing metadata and external resources -->
+    <meta charset="UTF-8"> <!-- Character encoding declaration -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibility declaration for Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport declaration for responsive design -->
+    <title>The Basic HTML and CSS Quick Reference Guide</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
 </head>
-<body>
-
+<body> <!-- Body section containing visible content -->
+    
+<!-- Main heading -->
 <h1 id="html_css_block">
-    HTML and CSS Quick Reference Guide
+    The Basic HTML and CSS Quick Reference Guide
 </h1>
-<hr>
+<hr> <!-- Horizontal rule for visual separation -->
+
+<!-- Subheading -->
 <h2 id="Head_Body_Section">
     Head & Body Sections
 </h2>
 
+<!-- Paragraph explaining head section -->
 <p>
-    head section contains information that describes the web page document.
+    The head section contains information about the web page document.
 </p>
 
+<!-- Code example of head section -->
 <pre><code>&lt;head&gt;
-    &lt;title&gt;Page Title Goes Here&lt;/title&gt;
+    &lt;title&gt;The title of the page goes here&lt;/title&gt;
     &lt;meta charset="utf-8"&gt;
 &lt;/head&gt;</code></pre>
 
-<p>The body section contains text and elements that display in the web page document.</p>
-<pre><code>&lt;body&gt;
-    ... body text and more HTML5 tags go here ...
-&lt;/body&gt;</code></pre>
+<!-- Another paragraph explaining body section -->
 <p>
-    ... body text and more HTML5 tags go here ...
+    Text and other elements that appear in the web page document are contained in the body section.
+    <br><br>
+    <b>Input:</b>
 </p>
-<hr>
-<h2>Heading Element</h2>
-<p>Use heading elements to define headings of different sizes.</p>
 
+<!-- Code example of body section -->
+<pre><code>&lt;body&gt;
+    Here are additional HTML5 tags and body text.
+&lt;/body&gt;</code></pre>
+
+<!-- Output of the body section -->
+<p>
+    <b>Output:</b>
+    <br><br>
+    Here are additional HTML5 tags and body text.
+</p>
+<hr> <!-- Horizontal rule for visual separation -->
+
+<!-- Heading element section -->
+<h2>Heading Element</h2>
+
+<!-- Paragraph explaining heading elements -->
+<p>Use heading elements to define headings of different sizes.
+<br><br>
+<b>Input:</b>
+</p>
+
+<!-- Code example of heading elements -->
 <pre><code>
 &lt;h1&gt;Heading Level 1&lt;/h1&gt;
 
@@ -52,108 +76,179 @@
 
 </code></pre>
 
+<!-- Output of heading elements -->
+<b>Output:</b>
 <h1>Heading Level 1</h1>
 <h2>Heading Level 2</h2>
 <h3>Heading Level 3</h3>
 <h4>Heading Level 4</h4>
 <h5>Heading Level 5</h5>
 <h6>Heading Level 6</h6>
-<hr>
+<hr> <!-- Horizontal rule for visual separation -->
+
+<!-- Paragraph element section -->
 <h2>Paragraph Element</h2>
 
+<!-- Paragraph explaining paragraph element -->
+<p>The paragraph element groups sentences and sections of text together.
+<br><br>
+<b>Input:</b>
+</p>
+
+<!-- Code example of paragraph element -->
 <pre><code>&lt;p&gt;
     This is a paragraph element.
 &lt;/p&gt;</code></pre>
-<p>This is a paragraph element.</p>
-<p>The paragraph element groups sentences and sections of text together.</p>
-<hr>
+
+<!-- Output of paragraph element -->
+<p> 
+    <b>Output:</b>
+    <br><br>
+    This is a paragraph element.
+</p>
+<hr> <!-- Horizontal rule for visual separation -->
+
+<!-- Line break element section -->
 <h2>Line Break Element</h2>
-<p>The line break element causes the next element or text to display on a new line.</p>
+
+<!-- Paragraph explaining line break element -->
+<p>The line break element causes the next element or text to display on a new line.
+    <br><br>
+    <b>Input:</b>
+</p>
+
+<!-- Code example of line break element -->
 <pre><code>This is some text &lt;br&gt;
 This starts on a new line.</code></pre>
-<hr>
+
+<!-- Output of line break element -->
+<p>
+    <b>Output:</b>
+    <br><br>
+    This is some text <br>
+    This starts on a new line.
+</p>
+<hr> <!-- Horizontal rule for visual separation -->
+
+<!-- Blockquote element section -->
 <h2>Blockquote Element</h2>
-<p>The blockquote element indents a block of text for special emphasis.</p>
+
+<!-- Paragraph explaining blockquote element -->
+<p>The blockquote element indents a block of text for special emphasis.
+    <br><br>
+    <b>Input:</b>
+</p>
+
+<!-- Code example of blockquote element -->
 <pre><code>&lt;blockquote&gt;
     This is a blockquote element. 
     It indents a block of text for special emphasis.
 &lt;/blockquote&gt;</code></pre>
 
+<!-- Output of blockquote element -->
+<b>Output:</b>
 <blockquote>
 This is a blockquote element.<br> 
 It indents a block of text for special emphasis.
 </blockquote>
-<hr>
+<hr> <!-- Horizontal rule for visual separation -->
+
+<!-- Phrase elements section -->
 <h2>Phrase Elements</h2>
-    <p>Indicate the context and meaning of the text.</p>
-    <table>
-        <tr>
-            <th>Code</th>
-            <th>Example</th>
-            <th>Description</th>
-            
-        </tr>
-        <tr>
-            <td><pre><code>&lt;b&gt;</code></pre></td>
-            <td><b>Bold text</b></td>
-            <td>Text that has no extra importance but is styled in bold font by usage and convention.</td>
-        </tr>
-        <tr>
-            <td><pre><code>&lt;em&gt;</code></pre></td>
-            <td><em>Emphasized text</em> </td>
-            <td>Causes text to be emphasized in relation to other text; usually displayed in italics.</td>
-        </tr>
-        <tr>
-            <td><pre><code>&lt;i&gt;</code></pre></td>
-            <td><i>Italicized text</i></td>
-            <td>Text that has no extra importance but is styled in italics by usage and convention.</td>
-        </tr>
-        <tr>
-            <td><pre><code>&lt;mark&gt;</code></pre></td>
-            <td><mark>Marked text</mark> </td>
-            <td>Text that is highlighted in order to be easily referenced.</td>
-        </tr>
-        <tr>
-            <td><pre><code>&lt;small&gt;</code></pre></td>
-            <td><small>Small text</small> </td>
-            <td>Legal disclaimers and notices (“fine print”) displayed in small font-size.</td>
-        </tr>
-        <tr>
-            <td><pre><code>&lt;strong&gt;</code></pre></td>
-            <td><strong>Strong text</strong></td>
-            <td>Strong importance; causes text to stand out from surrounding text; usually displayed in bold.</td>
-        </tr>
-        <tr>
-            <td><pre><code>&lt;sub&gt;</code></pre></td>
-            <td>H<sub>2</sub>O</td>
-            <td><b>Subscript</b> displays a subscript as small text below the baseline.</td>
-        </tr>
-        <tr>
-            <td><pre><code>&lt;sup&gt;</code></pre></td>
-            <td>x<sup>2</sup></td>
-            <td><b>Superscript</b> displays a superscript as small text above the baseline.</td>
-        </tr>
-    </table>
+
+<!-- Paragraph explaining phrase elements -->
+<p>Indicate the context and meaning of the text.</p>
+
+<!-- Table displaying phrase elements -->
+<table>
+    <tr>
+        <th>Code</th>
+        <th>Example</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><pre><code>&lt;b&gt;</code></pre></td>
+        <td><b>Bold text</b></td>
+        <td>Text that has no extra importance but is styled in bold font by usage and convention.</td>
+    </tr>
+    <tr>
+        <td><pre><code>&lt;em&gt;</code></pre></td>
+        <td><em>Emphasized text</em> </td>
+        <td>Causes text to be emphasized in relation to other text; usually displayed in italics.</td>
+    </tr>
+    <tr>
+        <td><pre><code>&lt;i&gt;</code></pre></td>
+        <td><i>Italicized text</i></td>
+        <td>Text that has no extra importance but is styled in italics by usage and convention.</td>
+    </tr>
+    <tr>
+        <td><pre><code>&lt;mark&gt;</code></pre></td>
+        <td><mark>Marked text</mark> </td>
+        <td>Text that is highlighted in order to be easily referenced.</td>
+    </tr>
+    <tr>
+        <td><pre><code>&lt;small&gt;</code></pre></td>
+        <td><small>Small text</small> </td>
+        <td>Legal disclaimers and notices (“fine print”) displayed in small font-size.</td>
+    </tr>
+    <tr>
+        <td><pre><code>&lt;strong&gt;</code></pre></td>
+        <td><strong>Strong text</strong></td>
+        <td>Strong importance; causes text to stand out from surrounding text; usually displayed in bold.</td>
+    </tr>
+    <tr>
+        <td><pre><code>&lt;sub&gt;</code></pre></td>
+        <td>H<sub>2</sub>O</td>
+        <td><b>Subscript</b> displays a subscript as small text below the baseline.</td>
+    </tr>
+    <tr>
+        <td><pre><code>&lt;sup&gt;</code></pre></td>
+        <td>x<sup>2</sup></td>
+        <td><b>Superscript</b> displays a superscript as small text above the baseline.</td>
+    </tr>
+</table>
 <br>
-<hr>
+<hr> <!-- Horizontal rule for visual separation -->
+
+<!-- Proper nesting example section -->
 <h2>Proper Nesting Example</h2>
-<p>Example of properly nested elements:</p>
+
+<!-- Paragraph explaining proper nesting example -->
+<p>Example of properly nested elements:
+    <br><br>
+    <b>Input:</b>
+</p>
+
+<!-- Code example of proper nesting -->
 <pre><code>&lt;p&gt;&lt;i&gt;Call for a free quote for your web development needs: &lt;strong&gt; 000 0000 0000 &lt;/strong&gt;&lt;/i&gt;&lt;/p&gt;</code></pre>
 
+<!-- Output of proper nesting example -->
 <p>
+    <b>Output:</b>
+    <br><br>
     <i>
-    Call for a free quote for your web developmwnt needs:
+    Call for a free quote for your web development needs:
     <strong>
         000 0000 0000
     </strong>
     </i>
 </p>
-<hr>
+<hr> <!-- Horizontal rule for visual separation -->
+
+<!-- HTML lists section -->
 <h2>HTML Lists</h2>
 
+<!-- Unordered list subsection -->
 <h3>Unordered List</h3>
 
-<p>An unordered list displays a bullet before each entry.</p>
+<!-- Paragraph explaining unordered list -->
+<p>
+    An unordered list displays a bullet before each entry.
+    <br><br>
+    <b>Input:</b>
+</p>
+
+<!-- Code example of unordered list -->
 <pre><code>&lt;p&gt;
     An unordered list of network protocols:
 &lt;/p&gt;
@@ -165,7 +260,10 @@ It indents a block of text for special emphasis.
     &lt;li&gt;FTP&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
-<p>An unordered list of network protocols:</p>
+<!-- Output of unordered list -->
+<p><b>Output:</b>
+    <br><br>
+    An unordered list of network protocols:</p>
 <ul>
     <li>TCP</li>
     <li>IP</li>
@@ -173,10 +271,18 @@ It indents a block of text for special emphasis.
     <li>FTP</li>
 </ul>
 
+<!-- Ordered list subsection -->
 <h3>Ordered List</h3>
-<p>An ordered list displays numbers or letters before each entry.</p>
+
+<!-- Paragraph explaining ordered list -->
+<p>An ordered list displays numbers or letters before each entry.
+    <br><br>
+    <b>Input:</b>
+</p>
+
+<!-- Code example of ordered list -->
 <pre><code>&lt;p&gt;
-    An ordered list for getting an addmission:
+    An ordered list for getting an admission:
 &lt;/p&gt;
     
 &lt;ol&gt;
@@ -186,16 +292,29 @@ It indents a block of text for special emphasis.
     &lt;li&gt;Attend course&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
 
-<p>An ordered list for getting an addmission:</p>
+<!-- Output of ordered list -->
+<p>
+    <b>Output:</b>
+    <br><br>
+    An ordered list for getting an admission:</p>
 <ol>
     <li>Apply to school</li>
     <li>Register for course</li>
     <li>Pay tuition</li>
     <li>Attend course</li>
 </ol>
-<hr>
+<hr> <!-- Horizontal rule for visual separation -->
+
+<!-- Description list subsection -->
 <h3>Description List</h3>
-<p>A description list is useful to display a list of terms and descriptions.</p>
+
+<!-- Paragraph explaining description list -->
+<p>A description list is useful to display a list of terms and descriptions.
+    <br><br>
+    <b>Input:</b>
+</p>
+
+<!-- Code example of description list -->
 <pre><code>&lt;dl&gt;
     &lt;dt&gt;IP&lt;/dt&gt;
     &lt;dd&gt;Internet Protocol&lt;/dd&gt;
@@ -203,56 +322,111 @@ It indents a block of text for special emphasis.
     &lt;dd&gt;Transmission Control Protocol&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
 
+<!-- Output of description list -->
+<b>Output:</b>
+    <br>
 <dl>
     <dt>IP</dt>
     <dd>Internet Protocol</dd>
     <dt>TCP</dt>
     <dd>Transmission Control Protocol</dd>
 </dl>
-<hr>
+<hr> <!-- Horizontal rule for visual separation -->
+
+<!-- Anchor element section -->
 <h2>Anchor Element - Adding Links</h2>
-<p>Specifies a hyperlink reference href to a piece of content on your own or another website.</p>
+
+<!-- Paragraph explaining anchor element -->
+<p>Specifies a hyperlink reference href to a piece of content on your own or another website.
+    <br><br>
+    <b>Input:</b>
+</p>
+
+<!-- Code example of anchor element -->
 <pre><code>&lt;a href="https://www.uhdpaper.com/2020/11/81491-cat-cute-bow-tie-4k.html"&gt;Cat with a bow wallpaper&lt;/a&gt;</code></pre>
+
+<!-- Output of anchor element -->
+<b>Output:</b>
+    <br><br>
 <a href="https://www.uhdpaper.com/2020/11/81491-cat-cute-bow-tie-4k.html">Cat with a bow wallpaper</a>
-<br>
-<hr>
+<br><br>
+<hr> <!-- Horizontal rule for visual separation -->
+
+<!-- Image element section -->
 <h2>Image Element - Adding/Linking Images</h2>
+
+<!-- Paragraph explaining image element -->
 <p>The &lt;img&gt; allows you to insert images into your web pages. The &lt;alt&gt; attribute specifies an alternate
-text for an image.</p>
+text for an image.<br><br>
+<b>Input:</b></p>
+
+<!-- Code example of image element -->
 <pre><code>&lt;img src="Image/4cats.jpg" alt="Cats"&gt;</code></pre>
+
+<!-- Output of image element -->
+<b>Output:</b>
+    <br><br>
 <img src="Image/4cats.jpg" alt="Cats">
 
-<hr>
+<hr> <!-- Horizontal rule for visual separation -->
 
+<!-- Div element section -->
 <h2>Div Element</h2>
+
+<!-- Paragraph explaining div element -->
 <p>The &lt;div&gt; element configures a structural block area or "division" on a web page with empty space above
-and below. You can use CSS to style and position the divs by adding class and/or id attributes to your div elements. This is the foundation for CSS-based page layouts.</p>
+and below. You can use CSS to style and position the divs by adding class and/or id attributes to your div elements. 
+This is the foundation for CSS-based page layouts.
+<br><br>
+    <b>Input:</b></p>
+
+<!-- Code example of div element -->
 <pre><code>&lt;div class="description"&gt;
     &lt;h1&gt;This is the first heading&lt;/h1&gt;
     &lt;p&gt;Description Here&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 
+<!-- Output of div element -->
+
+    <b>Output:</b>
+        <br>
 <div class="description">
     <h1>This is the first heading</h1>
     <p>Description Here</p>
 </div>
 
-<hr>
+<hr> <!-- Horizontal rule for visual separation -->
 
+<!-- Span element section -->
 <h2>Span Element</h2>
+
+<!-- Paragraph explaining span element -->
 <p>The &lt;span&gt; is an inline element that is often used as a container for some text. It is used to style parts of the text.</p>
 <p>The span element is similar to div; the difference is that div is a block-level element, whereas span is an inline element.</p>
 <p>Block-level Elements: Always start on a new line. Intended for holding standalone blocks of content, such as paragraphs of text.</p>
-<p>Inline Elements: Intended to hold smaller pieces of content within a larger block of content, such as a few words or a sentence.</p>
+<p>Inline Elements: Intended to hold smaller pieces of content within a larger block of content, such as a few words or a sentence.
+    <br><br>
+    <b>Input:</b>
+</p>
+
+<!-- Code example of span element -->
 <pre><code>&lt;h2&gt;Some &lt;span style="color:red"&gt;Important&lt;/span&gt; Message&lt;/h2&gt;</code></pre>
+
+<!-- Output of span element -->
+<b>Output:</b>
+    <br>
 <h2>This is an 
     <span style="color:red">
         important
     </span> 
     message!
 </h2>
-<hr>
+<hr> <!-- Horizontal rule for visual separation -->
+
+<!-- Formatting tags and special characters section -->
 <h2>Formatting Tags and Special Characters</h2>
+
+<!-- Table displaying formatting tags and special characters -->
 <table>
     <tr>
         <th>Code</th>
@@ -279,54 +453,72 @@ and below. You can use CSS to style and position the divs by adding class and/or
         <td>&nbsp; Adds empty space</td>
     </tr>
 </table>
-<hr>
+<hr> <!-- Horizontal rule for visual separation -->
+
+<!-- CSS section -->
 <h2 id="css">CSS: Cascading Style Sheets</h2>
+
+<!-- Paragraph explaining CSS -->
 <p>CSS (Cascading Style Sheets) allows you to define styles for web pages. It targets elements using selectors, which allows you to target specific elements and apply the same style to them.</p>
-<hr>
+<hr> <!-- Horizontal rule for visual separation -->
+
+<!-- CSS structure section -->
 <h3>CSS STRUCTURE (syntax)</h3>
+
+<!-- Code example of CSS structure -->
 <pre><code>Selector {
     Property 1: value;
     Property 2: value;
     Property 3: value;
 }</code></pre>
 
-<hr>
+<hr> <!-- Horizontal rule for visual separation -->
+
+<!-- Applying CSS into HTML section -->
 <h3>Applying CSS into HTML</h3>
 
+<!-- Subsection explaining different ways to apply CSS -->
 <h4>Inline CSS</h4>
+
+<!-- Paragraph explaining inline CSS -->
 <p>To apply a distinct style to a single HTML element. Inline CSS makes use of an HTML element's style attribute.</p>
+
+<!-- Code example of inline CSS -->
 <pre><code>&lt;h1 style="color: White;"&gt;
     Hello World!
 &lt;/h1&gt;</code></pre>
 
 <h4>Internal CSS</h4>
+
+<!-- Paragraph explaining internal CSS -->
 <p>To define a distinct style to a single HTML page. Internal CSS is defined in the &lt;head&gt; section of an HTML page, within a &lt;style&gt; element.</p>
-<pre><code>&lt;style&gt;
-    body {
-        background-color: White;
-    }
-&lt;/style&gt;</code></pre>
+
+<!-- Code example of internal CSS -->
+<pre><code>&lt;head&gt;
+    &lt;style&gt;
+        h1 {
+            color: Red;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;</code></pre>
 
 <h4>External CSS</h4>
-<p>Many HTML pages use an external style sheet to customize their website. To use an external style sheet, include a link to it in the &lt;head&gt; section of each HTML page.</p>
+
+<!-- Paragraph explaining external CSS -->
+<p>To apply a single distinct style to multiple HTML pages. External CSS is defined in a separate file with a .css extension, and linked to an HTML page using the &lt;link&gt; element within the &lt;head&gt; section.</p>
+
+<!-- Code example of external CSS -->
 <pre><code>&lt;head&gt;
-    &lt;link rel="stylesheet" href="name_of_the_css_file.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
 &lt;/head&gt;</code></pre>
-<hr>
-<h3>CSS Selectors</h3>
 
-<h4>Element Selector</h4>
-<p>Used to select HTML elements based on their names. (Example: h1, p, a)</p>
-<pre><code>h1 {
-    color: Black;
-}</code></pre>
+<hr> <!-- Horizontal rule for visual separation -->
 
-<h4>ID Selector</h4>
-<p>The id selector uses an HTML element's id attribute to select a specific element. There can only be one element with the same id.</p>
-<pre><code>#heading {
-    text-align: center;
-}</code></pre>
-<br>
-<br>
-</body>
-</html>
+<!-- Conclusion section -->
+<h2>Conclusion</h2>
+
+<!-- Paragraph summarizing the guide -->
+<p>This quick reference guide covers some of the fundamental elements and concepts of HTML and CSS, providing examples and explanations for each. By understanding these basic building blocks, you can start creating your own web pages and layouts.</p>
+<br><br>
+</body> <!-- Closing body tag -->
+</html> <!-- Closing HTML tag -->
