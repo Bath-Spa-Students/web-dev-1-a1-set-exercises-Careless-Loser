@@ -27,6 +27,7 @@ pre code {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
+    text-align: left;
 }
 
 img{
@@ -38,6 +39,7 @@ code {
     background-color: #f4f4f4;
     padding: 2px 5px;
     border: 1px solid #ccc;
+    text-align: left;
 }
 
 ul, ol {
@@ -50,6 +52,10 @@ ul, ol {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     padding: 9px;
+}
+
+hr{
+    border: 1px solid black;
 }
 
 table {
