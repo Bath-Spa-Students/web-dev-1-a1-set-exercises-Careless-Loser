@@ -1,258 +1,218 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
-
-*{
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Lemon&family=Patua+One&family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+* {
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
 }
-body{
-    line-height: 1.3;
+
+body {
+    width: 100vw; /* Adjusted to viewport width */
+    overflow-x: hidden;
+    height: auto;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
-ul li{
-    list-style-type: none;
+
+nav .wrapper{
+    position: absolute;
+    top: 0;
+    height: 10vh;
+    width: 100%;
 }
-button{
-    outline: 0;
-    cursor: pointer;
+
+nav .navbar-nav{
+    width: 100%;
+    height: 40px;
+    position: center;
+    display: block;
+    justify-content: space-around;
+    padding-top: 30px;
+    text-align: center;
 }
-a{
+
+nav .navbar-nav .links a{
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    color: #ffffff;
+    margin: 0 90px;
+    transition: 0.3s linear;
 }
 
-/* navbar */
-.navbar{
-    color: #ffffff;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 999;
-}
-.btn-bars{
-    background: #0c0c0c;
-    color: #fff;
-    font-size: 0.95rem;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: #ffffff;
-    border:none;
-    padding: 0.4rem 0.9rem;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    margin: 1.6rem 1.6rem 0 0;
-    transition: all 0.4s eases;
-}
-.btn-bars span{
-    font-size: 1.6rem;
-    padding-left: 1rem;
-    color: #fff;
-}
-.btn-bars:hover{
-    color: #fff;
-}
-.navbar-collapse{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    background: #0c0c0c;
-    width: 280px;
-    padding: 1.6rem;
-    transform: translateX(100%);
-    transition: all 0.5s ease;
+nav .navbar-nav .links a:hover{
+    color: rgb(255, 84, 84);
+    
 }
 
-/* showMenu */
-.showMenu{
-    transform: translateX(0);
-}
-
-.btn-close{
-    background: #555555;
-    display: block;
-    width: 33px;
-    height: 33px;
-    font-size: 1.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    border-radius: 4px;
-    cursor: pointer;
-    transition:  color 0.5s ease;
-}
-.btn-close:hover{
-    color: #646464;
-}
-.navbar-nav{
-    margin: 4rem 0;
-}
-.nav-item{
-    margin: 1.4rem 0;
-}
-.nav-link{
-    color: #fff;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 1.3rem;
-    transition: color 0.5s ease;
-}
-.nav-link:hover{
-    color: #ffffff;
-}
-.nav-para{
-    line-height: 1.6;
-    font-size: 0.9rem;
-    opacity: 0.7;
-    font-weight: 300;
-}
-.nav-social-icons{
-    margin-top: 3rem;
-    margin-right: 4rem;
-    display: flex;
-    justify-content: space-between;
-}
-.nav-social-icons a{
-    color: #ffffff;
-}
-
-/* header */
-.header{
-    background: black;
+section{
+    width: 100%;
     height: 100vh;
-    color: #fff;
+    overflow: hidden;
+
+}
+
+/* landing page */
+
+.landingpage{
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
+    align-items: center;
 }
-.header-wrapper{
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
-    width: 90%;
-}
-.site-name{
-    position: fixed;
-    top: 1.6rem;
-    left: 1.6rem;
-    color: #fff;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 2.2rem;
-    font-weight: 500;
-}
-.site-name span{
-    color: #ffffff;
-}
-.header-wrapper h3{
-    font-family: 'Fira Sans', sans-serif;
-    letter-spacing: 3px;
-    opacity: 0.6;
-}
-.header-wrapper h1{
-    margin: 1.2rem 0;
-    font-size: 2.5rem;
-    width: 80%;
-}
-.header-links{
+
+.landingpage .content{
     display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+    align-items: center;
 }
-.header-links a{
-    border: 2.5px solid #fff;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    padding: 0.8rem 1rem;
-    margin: 1rem 1rem 1rem 0;
-    transition: all 0.5s ease;
+
+.landingpage .content .heading{
+    margin-top: -100px;
+    max-width: 660px ;
+    width: 200%;
 }
-.header-links a:hover{
-    background: #fff;
-    color: #000;
+   
+.landingpage .content .heading h1{
+    color: rgb(255, 255, 255);
+    line-height: -1rem;
+    font-size: 4.5rem;
 }
-.header-social-links{
-    position: absolute;
-    right: 0;
-    top: 25%;
-    display: none;
+.landingpage .content .heading p{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
 }
-.header-social-links a{
-    color: #fff;
+
+/* About section */
+.about {
+    box-shadow: -5px -5px 100px black;
+    background: black;
+    min-height: 10vh; /* Set minimum height to 100% of the viewport height */
+    padding-bottom: 1px; /* Add padding to create space for scrolling */
+    padding-top: 100px;
+}
+
+.about .container {
+    width: 100%;
+    height: 100%;
+    align-items: center;
     display: block;
-    margin: 1rem 2.4rem 1rem 0;
-    font-weight: 700;
-    border: 2px solid #fff;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
+}
+
+
+.about .container .about-content {
+    color: white;
+    width: 100%;
+}
+
+.about .container .about-content h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'fira', sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-size: 4rem;
+}
+
+.about .container .about-content p {
+    text-align: left;
+    line-height: -1rem;
+    font-size: 1.0rem;
+    text-align: center;
+}
+
+/* Tournaments section */
+.tournaments {
+    box-shadow: -5px -5px 100px black;
+    background: black;
+    min-height: 10vh; /* Set minimum height to 100% of the viewport height */
+    padding-top: 100px;
+}
+
+.tournaments .container {
+    width: 100%;
+    height: 100%;
     align-items: center;
-    cursor: pointer;
-    position: relative;
-}
-.header-social-links span{
-    position: absolute;
-    right: 150%;
-    opacity: 0;
-    transition: all 0.5s ease;
-    background: #ffffff;
-    border-radius: 25px;
-    padding: 0.3rem 0.7rem;
-    color: #000;
-}
-.header-social-links a:hover span{
-    opacity: 1;
+    display: block;
 }
 
-@media screen and (max-width: 400px){
-    .site-name{
-        font-size: 1.8rem;
-    }
-    .btn-bars{
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
-    .navbar-collapse{
-        width: 100%;
-    }
-    .navbar-nav{
-        margin: 2rem 0;
-    }
-    .header-wrapper h3{
-        font-size: 0.9rem;
-        text-align: center;
-    }
-    .header-wrapper h1{
-        text-align: center;
-        font-weight: 500;
-        font-size: 1.6rem;
-        width: 100%;
-    }
-    .header-links{
-        flex-direction: column;
-    }
-    .header-links a{
-        font-size: 0.8rem;
-        margin: 0.3rem;
-        text-align: center;
-    }
+
+.tournaments .container .tournaments-content {
+    color: white;
+    width: 100%;
 }
 
-@media screen and (min-width: 768px){
-    .header-social-links{
-        display: block;
-    }
+.tournaments .container .tournaments-content h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'fira', sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-size: 4rem;
 }
 
-@media screen and (min-width: 992px){
-    .header-wrapper{
-        padding-left: 5rem;
-    }
-    .header-wrapper h1{
-        font-size: 3.2rem;
-        width: 60%;
-    }
+.tournaments .container .tournaments-content h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'fira', sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+.tournaments .container .tournaments-content p {
+    line-height: -1rem;
+    font-size: 1.0rem;
+    text-align: center;
+}
+
+/* Contact section */
+.tournaments {
+    box-shadow: -5px -5px 100px black;
+    background: black;
+    min-height: 10vh; /* Set minimum height to 100% of the viewport height */
+    padding-top: 100px;
+}
+
+.contact .container {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: block;
+}
+
+
+.contact .container .contact-content {
+    color: white;
+    width: 100%;
+}
+
+.contact .container .contact-content h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'fira', sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-size: 4rem;
+}
+
+.contact .container .contact-content h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'fira', sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+.contact .container .contact-content p {
+    line-height: -1rem;
+    font-size: 1.0rem;
+    text-align: center;
+}
+
+hr{
+    border: 2px solid white;
+    width: 100%;
 }
