@@ -84,6 +84,25 @@ section{
     font-size: 1.2rem;
 }
 
+.header-links{
+    display: flex;
+}
+.header-links a{
+    border: 1.5px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0.8rem 1rem;
+    margin: 1rem 1rem 1rem 0;
+    transition: all 0.5s ease;
+}
+.header-links a:hover{
+    background: #fff;
+    color: #000;
+}
+
 /* About section */
 .about {
     box-shadow: -5px -5px 100px black;
