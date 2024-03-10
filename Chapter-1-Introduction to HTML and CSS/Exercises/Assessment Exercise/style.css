@@ -1,192 +1,190 @@
 /* Importing fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Lemon&family=Patua+One&family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+
+/* Resetting default styles */
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    font-family: 'Poppins', sans-serif; /* Set default font family */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
+/* Styling for the body */
 body {
     width: 100vw; /* Adjusted to viewport width */
-    overflow-x: hidden;
-    height: auto;
-    position: relative;
-    background-color: white;
+    overflow-x: hidden; /* Hide horizontal overflow */
+    height: auto; /* Set height to auto */
+    position: relative; /* Set position to relative */
+    background-color: white; /* Set background color */
 }
 
-nav .wrapper{
-    position: absolute;
-    top: 0;
-    height: 10vh;
-    width: 100%;
+/* Styling for the navigation */
+nav .wrapper {
+    position: absolute; /* Set position to absolute */
+    top: 0; /* Align to the top of the parent */
+    height: 10vh; /* Set height */
+    width: 100%; /* Set width */
 }
 
-nav .nav-container{
-    width: 100%;
-    height: 100%;
-    margin:  0 80px;
-    position: center;
-    display: block;
-    justify-content: space-around;
-    padding-top: 60px;
-    padding-left: 90px;
-    align-items: center;
+nav .nav-container {
+    width: 100%; /* Set width to 100% */
+    height: 100%; /* Set height to 100% */
+    margin: 0 80px; /* Set margin */
+    position: center; /* Set position */
+    display: block; /* Set display to block */
+    justify-content: space-around; /* Space items evenly along the main axis */
+    padding-top: 60px; /* Set padding */
+    padding-left: 90px; /* Set padding */
+    align-items: center; /* Align items vertically */
 }
 
-nav .nav-container .links a{
-    font-size: 1.3rem;
-    color: black;
-    text-decoration: none;
-    margin: 0 20px;
-    transition: 0.2s linear;
+nav .nav-container .links a {
+    font-size: 1.3rem; /* Set font size */
+    color: black; /* Set text color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 20px; /* Set margin */
+    transition: 0.2s linear; /* Set transition effect */
 }
 
-nav .nav-container .links a:hover{
-    color: rgb(124, 123, 123);
-    
+nav .nav-container .links a:hover {
+    color: rgb(124, 123, 123); /* Change color on hover */
 }
 
-section{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-
+/* Styling for sections */
+section {
+    width: 100%; /* Set width to 100% */
+    height: 100vh; /* Set height to 100% of viewport height */
+    overflow: hidden; /* Hide overflow */
 }
 
-/* landing page */
-
-.landingpage{
-    background-image: url(images/back.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Styling for the landing page */
+.landingpage {
+    background-image: url(images/back.png); /* Set background image */
+    background-size: cover; /* Set background size */
+    background-position: center; /* Set background position */
+    background-repeat: no-repeat; /* Set background repeat */
+    display: flex; /* Set display to flex */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
-.landingpage .content{
-    display: flex;
-    margin-top: 150px;
-    justify-content: space-around;
-    align-items: center;
+.landingpage .content {
+    display: flex; /* Set display to flex */
+    margin-top: 150px; /* Set margin top */
+    justify-content: space-around; /* Space items evenly */
+    align-items: center; /* Align items vertically */
 }
 
-.landingpage .content .heading{
-    margin-top: -100px;
-    max-width:460px ;
-    width: 100%;
-}
-   
-.landingpage .content .heading h1{
-    color: black;
-    line-height: -2rem;
-    font-size: 4.5rem;
-}
-.landingpage .content .heading p{
-    color: black;
-    font-size: 1.2rem;
+.landingpage .content .heading {
+    margin-top: -100px; /* Set negative margin */
+    max-width: 460px; /* Set max width */
+    width: 100%; /* Set width to 100% */
 }
 
-.landingpage .content .image img{
-    width: 700px;
-    transform: rotate(40deg);
+.landingpage .content .heading h1 {
+    color: rgb(0, 0, 0); /* Set text color */
+    line-height: -2rem; /* Set line height */
+    font-size: 4.5rem; /* Set font size */
 }
 
+.landingpage .content .heading p {
+    color: black; /* Set text color */
+    font-size: 1.2rem; /* Set font size */
+}
 
+.landingpage .content .image img {
+    width: 700px; /* Set image width */
+    transform: rotate(40deg); /* Rotate image */
+}
 
-/* Method section */
+/* Styling for the method section */
 .method {
-    box-shadow: -5px -5px 100px black;
-    background: black;
-    min-height: 165vh; /* Set minimum height to 100% of the viewport height */
-    padding-bottom: 100px; /* Add padding to create space for scrolling */
+    box-shadow: -5px -5px 100px black; /* Set box shadow */
+    background: black; /* Set background color */
+    min-height: 165vh; /* Set minimum height */
+    padding-bottom: 100px; /* Add padding */
 }
 
 .method .container {
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: space-evenly;
-    display: flex;
+    width: 100%; /* Set width to 100% */
+    height: 100%; /* Set height to 100% */
+    align-items: center; /* Align items vertically */
+    justify-content: space-evenly; /* Space items evenly */
+    display: flex; /* Set display to flex */
 }
-
 
 .method .container .method-content {
-    color: white;
-    width: 30%;
+    color: white; /* Set text color */
+    width: 30%; /* Set width */
 }
 
-.method .container .method-content h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: 'Patua One', serif;
-    color: rgb(156, 46, 6);
-    letter-spacing: 1px;
-    font-size: 4rem;
+.method .container .method-content h2 {
+    text-align: center; /* Set text alignment */
+    margin-bottom: 20px; /* Set margin */
+    font-family: 'Patua One', serif; /* Set font family */
+    color: rgb(156, 46, 6); /* Set text color */
+    letter-spacing: 1px; /* Set letter spacing */
+    font-size: 3rem; /* Set font size */
 }
 
 .method .container .method-content p {
-    font-size: 1.4rem;
-    text-align: left;
+    font-size: 1.4rem; /* Set font size */
+    text-align: left; /* Set text alignment */
 }
 
-
-/* Food Details */
-
-.details-foods{
-    background-color: black;
+/* Styling for food details */
+.details-foods {
+    background-color: black; /* Set background color */
 }
 
-.details-foods .title{
-    width: 100%;
-    margin: 30px 0;
-    height: auto;
-    display: flex;
-    justify-content: center;
+.details-foods .title {
+    width: 100%; /* Set width to 100% */
+    margin: 30px 0; /* Set margin */
+    height: auto; /* Set height to auto */
+    display: flex; /* Set display to flex */
+    justify-content: center; /* Center horizontally */
 }
 
-.details-foods .title h1{
-    font-size: 3rem;
-    color: white;
-    text-align: center;
-    width: 40%;
+.details-foods .title h2 {
+    font-size: 2.5rem; /* Set font size */
+    color: white; /* Set text color */
+    text-align: center; /* Set text alignment */
+    width: 40%; /* Set width */
 }
 
-.details-foods .foods{
-    margin: 0 40px;
-    display: flex;
-    justify-content: space-around;
+.details-foods .foods {
+    margin: 0 40px; /* Set margin */
+    display: flex; /* Set display to flex */
+    justify-content: space-around; /* Space items evenly */
 }
-.details-foods .foods .card{
-    margin: 0 10px;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.details-foods .foods:hover .card{
-    scale: 1.1;
-    transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.details-foods .foods:hover .card:not(:hover){
-    opacity: 0.2;
-    backdrop-filter: blur(10px);
-    scale: 1;
-}
-
 
 .details-foods .foods .card {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    text-align: left;
+    margin: 0 10px; /* Set margin */
+    cursor: pointer; /* Set cursor to pointer */
+    border-radius: 10px; /* Set border radius */
+    box-shadow: 1px 1px 10px white; /* Set box shadow */
+    display: flex; /* Set display to flex */
+    flex-direction: column; /* Set flex direction */
+    justify-content: center; /* Center content vertically */
+}
+
+.details-foods .foods:hover .card {
+    scale: 1.1; /* Set scale */
+    transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); /* Set transition */
+}
+
+.details-foods .foods:hover .card:not(:hover) {
+    opacity: 0.2; /* Set opacity */
+    backdrop-filter: blur(10px); /* Add backdrop filter */
+    scale: 1; /* Set scale */
+}
+
+.details-foods .foods .card {
+    display: flex; /* Set display to flex */
+    flex-direction: column; /* Set flex direction */
+    align-items: left; /* Align items horizontally */
+    justify-content: left; /* Align content horizontally */
+    text-align: left; /* Set text alignment */
 }
 
 .details-foods .foods .card img {
@@ -195,21 +193,21 @@ section{
     margin: 0 auto; /* Center the image horizontally */
 }
 
-.details-foods .foods .card .discription{
-    color: white;
-    margin:0 10px;
+.details-foods .foods .card .discription {
+    color: white; /* Set text color */
+    margin: 0 10px; /* Set margin */
 }
-.details-foods .foods .card .discription h2{
-    
-    font-family: 'Patua One', serif;
-    letter-spacing: 1px;
-    margin: 8px 0;
-    text-align: left;
+
+.details-foods .foods .card .discription h2 {
+    font-family: 'Patua One', serif; /* Set font family */
+    letter-spacing: 1px; /* Set letter spacing */
+    margin: 8px 0; /* Set margin */
+    text-align: left; /* Set text alignment */
 }
 
 .details-foods .foods .card .discription p {
-    float: left;
-    margin-left: 10px;
+    float: left; /* Float the element to the left */
+    margin-left: 10px; /* Set margin */
 }
 
 .details-foods .foods .card .discription ul {
