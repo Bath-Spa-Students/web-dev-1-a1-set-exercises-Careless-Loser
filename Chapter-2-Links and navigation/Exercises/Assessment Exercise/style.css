@@ -12,7 +12,9 @@ body {
     overflow-x: hidden;
     height: auto;
     position: relative;
-    background-color: rgb(0, 0, 0);
+    background: linear-gradient(50deg,#fff, #787878, #333333, #181818,#000);
+    animation: color 8s ease-in-out infinite;
+    background-size: 300% 300%;
     color: white;
 }
 
@@ -105,8 +107,9 @@ section{
 
 /* About section */
 .about {
-    box-shadow: -5px -5px 100px black;
-    background: black;
+    background: linear-gradient(45deg,#fff, #787878, #333333, #181818,#000);
+    animation: color 8s ease-in-out infinite;
+    background-size: 300% 300%;
     min-height: 10vh; /* Set minimum height to 100% of the viewport height */
     padding-bottom: 1px; /* Add padding to create space for scrolling */
     padding-top: 100px;
@@ -143,10 +146,11 @@ section{
 
 /* Tournaments section */
 .tournaments {
-    box-shadow: -5px -5px 100px black;
-    background: black;
+    background: linear-gradient(-75deg,#fff, #787878, #333333, #181818,#000);
+    animation: color 8s ease-in-out infinite;
+    background-size: 300% 300%;
     min-height: 10vh; /* Set minimum height to 100% of the viewport height */
-    padding-top: 100px;
+    padding-top: 250px;
 }
 
 .tournaments .container {
@@ -188,10 +192,11 @@ section{
 
 /* Contact section */
 .contact {
-    box-shadow: -5px -5px 100px black;
-    background: black;
+    background: linear-gradient(45deg,#fff, #787878, #333333, #181818,#000);
+    animation: color 8s ease-in-out infinite;
+    background-size: 300% 300%;
     min-height: 10vh; /* Set minimum height to 100% of the viewport height */
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
 .contact .container {
@@ -234,4 +239,15 @@ section{
 hr{
     border: 2px solid white;
     width: 100%;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }100%{
+        background-position: 0 50%;
+    }
 }
