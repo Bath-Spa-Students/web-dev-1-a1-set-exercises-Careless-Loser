@@ -1,106 +1,118 @@
-body{
-    background-color: black;
-    color: white;
-
+/* Styling for the body */
+body {
+    background-color: black; /* Black background */
+    color: white; /* White text color */
 }
 
-h1{
-    color: white;
-    text-align: center;
-    padding-top: 60px;
+/* Styling for the main heading */
+h1 {
+    color: white; /* White text color */
+    text-align: center; /* Center-align text */
+    padding-top: 60px; /* Add padding on top for spacing */
 }
 
-.Art{
-    height: auto;
-    width: 800px;
-    position: absolute;
-    margin: auto;
-    top: 150;
-    bottom: 0px;
-    left: 0;
-    right: 0;
+/* Styling for the art section */
+.Art {
+    height: auto; /* Adjust height automatically */
+    width: 800px; /* Set fixed width */
+    position: absolute; /* Position absolutely within its container */
+    margin: auto; /* Center horizontally */
+    top: 150px; /* Position from the top */
+    bottom: 0px; /* Align at the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
 }
 
-#art{
-    height: auto;
-    width: 700px;
-    position: relative;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transition: 1s;
+/* Styling for the art image */
+#art {
+    height: auto; /* Adjust height automatically */
+    width: 700px; /* Set fixed width */
+    position: relative; /* Position relatively within its container */
+    margin: auto; /* Center horizontally */
+    top: 0; /* Align from the top */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    transition: 1s; /* Smooth transition effect */
 }
 
-figure:hover #art{
-    filter:grayscale(100%);
-    transform: scale(1.1);
+/* Styling for the art image on hover */
+figure:hover #art {
+    filter: grayscale(100%); /* Apply grayscale filter */
+    transform: scale(1.1); /* Scale up by 10% */
 }
 
-.Stairs{
-    height: auto;
-    width: 800px;
-    position: absolute;
-    margin: auto;
-    top: 550px;
-    bottom: 0;
-    left: 0;
-    right: 0;
+/* Styling for the stairs section */
+.Stairs {
+    height: auto; /* Adjust height automatically */
+    width: 800px; /* Set fixed width */
+    position: absolute; /* Position absolutely within its container */
+    margin: auto; /* Center horizontally */
+    top: 550px; /* Position from the top */
+    bottom: 0; /* Align at the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
 }
 
-#stairs{
-    height: auto;
-    width: 700px;
-    position:relative;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transition: 1s;
+/* Styling for the stairs image */
+#stairs {
+    height: auto; /* Adjust height automatically */
+    width: 700px; /* Set fixed width */
+    position: relative; /* Position relatively within its container */
+    margin: auto; /* Center horizontally */
+    top: 0; /* Align from the top */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    transition: 1s; /* Smooth transition effect */
 }
 
-figure:hover #stairs{
-    filter:blur(5px);
-    transform: scale(1.1);
+/* Styling for the stairs image on hover */
+figure:hover #stairs {
+    filter: blur(5px); /* Apply blur effect */
+    transform: scale(1.1); /* Scale up by 10% */
 }
 
-.Walking{
-    height: auto;
-    width: 800px;
-    position: absolute;
-    margin: auto;
-    top: 950px;
-    bottom: 0;
-    left: 0;
-    right: 0;
+/* Styling for the walking section */
+.Walking {
+    height: auto; /* Adjust height automatically */
+    width: 800px; /* Set fixed width */
+    position: absolute; /* Position absolutely within its container */
+    margin: auto; /* Center horizontally */
+    top: 950px; /* Position from the top */
+    bottom: 0; /* Align at the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
 }
 
-#walking{
-    height: auto;
-    width: 700px;
-    position:relative;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transition: 1s;
+/* Styling for the walking image */
+#walking {
+    height: auto; /* Adjust height automatically */
+    width: 700px; /* Set fixed width */
+    position: relative; /* Position relatively within its container */
+    margin: auto; /* Center horizontally */
+    top: 0; /* Align from the top */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    transition: 1s; /* Smooth transition effect */
 }
 
-figure:hover #walking{
-    filter:invert(1000%);
-    transform: scale(1.1);
+/* Styling for the walking image on hover */
+figure:hover #walking {
+    filter: invert(100%); /* Invert colors */
+    transform: scale(1.1); /* Scale up by 10% */
 }
 
-
-figcaption{
-    color: white;
-    font-size: 10px;
-    text-align: center;
+/* Styling for the captions */
+figcaption {
+    color: white; /* White text color */
+    font-size: 10px; /* Small font size */
+    text-align: center; /* Center-align text */
 }
-span{
-    font-size: 16px;
-    text-align: center;
+
+/* Styling for the spans */
+span {
+    font-size: 16px; /* Larger font size */
+    text-align: center; /* Center-align text */
 }
