@@ -86,7 +86,7 @@ figure:hover #stairs{
 }
 
 figure:hover #walking{
-    filter:grayscale(100%);
+    filter:invert(1000%);
     transform: scale(1.1);
 }
 
