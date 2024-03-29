@@ -35,7 +35,8 @@ body {
 /* Line container */
 .line_container {
     text-align: left; /* Aligns the text to the left */
-
+    margin: 1px; /* Centers the container horizontally */
+    padding-right: 0px; /* Adds padding */
 }
 
 /* Header styles */
