@@ -1,72 +1,183 @@
-/* Resetting default margin and padding */
-* {
+*{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-/* Styling header */
-header {
-    background-color: #ff7eb9; /* Pink */
-    color: #000; /* Black */
-    padding: 20px;
-    text-align: center;
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font */
-}
-
-/* Styling navigation */
-nav {
-    background-color: #000; /* Black */
+.To-Do{
+    width: 100%;
+    height: 100vh;
+    background: black;
     padding: 10px;
 }
 
-nav ul {
-    list-style-type: none;
-    text-align: center;
+.todo-list{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: auto 20px 10px;
+    padding: 40px 20px 100px;
+    border-radius: 10px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ff7eb9; /* Pink */
-    font-weight: bold;
-}
-
-/* Styling main content */
-.main-content {
+.todo-list h2{
+    color: black;
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.column {
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
     flex: 1;
-    padding: 0 20px;
-}
-
-/* Styling demo items */
-.column ul {
-    list-style-type: none;
-}
-
-.column ul li {
-    background-color: #ff7eb9; /* Pink */
-    color: #000; /* Black */
+    border: none;
+    outline: none;
+    background: transparent;
     padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
 }
 
-/* Styling footer */
-footer {
-    background-color: #ff7eb9; /* Pink */
-    color: #000; /* Black */
-    text-align: center;
-    padding: 10px;
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #b61200;
+    color: #000000;
     font-size: 14px;
-    font-style: italic;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: #000000;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(Images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    color: #000000;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(Images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #b61200;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #ffffff;
+
+}
+
+
+
+.Timer{
+    background-color: #ffffff;
+    width: min(90%, 490px);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 54%;
+    padding: 1em 2em;
+    border-radius: 1em;
+}
+
+.timer-container{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.btn{
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    background-color: black;
+    color: #fff;
+}
+
+.btn-focus{
+    background-color: #b61200;
+    color: #fff;
+}
+
+.time-btn-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+#time{
+    text-align: center;
+    color: #000000;
+    font-size: 5em;
+    font-weight: 400;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+#btn-start, 
+#btn-pause{
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    background-color: #000000;
+    color: #fff;
+}
+
+#btn-reset{
+    background-color: Black;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
 }
