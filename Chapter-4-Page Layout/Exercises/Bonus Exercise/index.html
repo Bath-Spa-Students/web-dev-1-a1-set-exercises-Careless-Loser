@@ -1,54 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Study Planner</title>
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <h1>Study Planner</h1>
-    </header>
-
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Schedule</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Progress</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-    </nav>
-
-    <!-- Main Content -->
-    <section class="main-content">
-        <div class="column">
-            <h2>Column 1</h2>
-            <ul>
-                <li>Demo Item 1</li>
-                <li>Demo Item 2</li>
-                <li>Demo Item 5</li>
-            </ul>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <title>Study Planner</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="To-Do">
+            <div class="todo-list">
+                <h2>
+                    To-Do List 
+                </h2>
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Add your text">
+                    <button id="Add" onclick="addTask()">
+                        Add
+                    </button>
+                </div>
+                <ul id="list-container">
+                    <!-- <li class="checked">Task 1 </li>
+                    <li>Task 2 </li>
+                    <li>Task 3 </li> -->
+                </ul>
+            </div>
         </div>
-        <div class="column">
-            <h2>Column 2</h2>
-            <ul>
-                <li>Demo Item 3</li>
-                <li>Demo Item 4</li>
-            </ul>
-        </div>
-        <div class="column">
-            <h2>Column 3</h2>
-            <!-- No items in column 3 -->
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 Study Planner</p>
-    </footer>
-</body>
+        <div class="Timer">
+            <div class="timer-container">
+                <button id="Focus" class="btn btn-timer btn-focus">
+                    Focus
+                </button>
+                <button id="shortbreak" class="btn btn-shortbreak">
+                    Short Break
+                </button>
+                <button id="longbreak" class="btn btn-longbreak">
+                    Long Break
+                </button>
+            </div>
+            <div class="time-btn-container">
+                <span id="time"></span>
+                <div class="btn-container">
+                    <button id="btn-start" class="show">
+                        Start
+                    </button>
+                    <button id="btn-pause" class="hide">
+                        Pause
+                    </button>
+                    <button id="btn-reset" class="hide">
+                        Reset                    
+                    </button>
+                </div>
+               </div> 
+            </div>   
+        </div>
+           
+
+        <script src="script.js"></script>
+    </body>
 </html>
