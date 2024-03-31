@@ -1,3 +1,6 @@
+
+//To-Do list js
+
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 
@@ -37,7 +40,7 @@ function showTask(){
 }
 showTask();
 
-
+//Timer Js
 
 let focusButton = document.getElementById("Focus");
 let buttons = document.querySelectorAll(".btn");
@@ -151,3 +154,20 @@ startBtn.addEventListener("click", () => {
         }, 1000);
     }
 });
+
+// mini calendar js
+
+const minidate = document.getElementById("mini-date");
+const miniday = document.getElementById("mini-day");
+const minimonth = document.getElementById("mini-month");
+const miniyear = document.getElementById("mini-year");
+
+const today = new Date();
+const weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const allMonths = ["January","February","March","April","May","June","July","August"
+,"September","October","November","December"];
+
+minidate.innerHTML = today.getDate();
+miniday.innerHTML = weekDays[today.getDay()];
+minimonth.innerHTML = allMonths[today.getMonth()];
+miniyear.innerHTML = today.getFullYear();
