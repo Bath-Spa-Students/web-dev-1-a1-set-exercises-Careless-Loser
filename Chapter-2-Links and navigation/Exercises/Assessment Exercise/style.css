@@ -8,7 +8,7 @@
 }
 
 body {
-    width: 100vw; /* Adjusted to viewport width */
+    width: 100vw; 
     overflow-x: hidden;
     height: auto;
     position: relative;
@@ -110,8 +110,8 @@ section{
     background: linear-gradient(45deg,#fff, #787878, #333333, #181818,#000);
     animation: color 8s ease-in-out infinite;
     background-size: 300% 300%;
-    min-height: 10vh; /* Set minimum height to 100% of the viewport height */
-    padding-bottom: 1px; /* Add padding to create space for scrolling */
+    min-height: 10vh; 
+    padding-bottom: 1px; 
     padding-top: 100px;
 }
 
@@ -149,7 +149,7 @@ section{
     background: linear-gradient(-75deg,#fff, #787878, #333333, #181818,#000);
     animation: color 8s ease-in-out infinite;
     background-size: 300% 300%;
-    min-height: 10vh; /* Set minimum height to 100% of the viewport height */
+    min-height: 10vh; 
     padding-top: 250px;
 }
 
@@ -195,7 +195,7 @@ section{
     background: linear-gradient(45deg,#fff, #787878, #333333, #181818,#000);
     animation: color 8s ease-in-out infinite;
     background-size: 300% 300%;
-    min-height: 10vh; /* Set minimum height to 100% of the viewport height */
+    min-height: 10vh; 
     padding-top: 200px;
 }
 
