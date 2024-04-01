@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #000000;
+}
+
 /* Style to do list*/
 
 .To-Do{
@@ -114,11 +118,11 @@ ul li span:hover{
 
 .Timer{
     background-color: #ffffff;
-    width: min(90%, 490px);
+    width: min(90%, 484px);
     position: absolute;
     transform: translate(-50%, -50%);
     top: 20%;
-    left: 54%;
+    left: 54.5%;
     padding: 1em 2em;
     border-radius: 1em;
 }
@@ -227,3 +231,57 @@ ul li span:hover{
     width: 90%;
 }
 
+/* Style Big-calendar*/
+
+.bigcalendar{
+    background-color: #ffffff;
+    width: min(100%, 870px);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 125%;
+    left: 50%;
+    padding: 1em 2em;
+    border-radius: 1em;
+}
+
+.bigcalendar h3.year{
+   font-size: 40px;
+   text-align: center;  
+   border-bottom: 1px solid #b1b1b1;
+}
+
+.bigcalendar .event{
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+}
+
+.event .event-left{
+    background-color: #222;
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+}
+
+.event .event-left .date{
+    font-size: 50px;
+}
+
+.event .event-left .month{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.event .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+}
