@@ -167,7 +167,10 @@ const weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","S
 const allMonths = ["January","February","March","April","May","June","July","August"
 ,"September","October","November","December"];
 
-minidate.innerHTML = today.getDate();
+minidate.innerHTML = (today.getDate()<10?"0":"") + today.getDate();
 miniday.innerHTML = weekDays[today.getDay()];
 minimonth.innerHTML = allMonths[today.getMonth()];
 miniyear.innerHTML = today.getFullYear();
+
+// Big calendar js
+
