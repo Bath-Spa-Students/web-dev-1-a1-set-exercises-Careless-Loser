@@ -171,6 +171,3 @@ minidate.innerHTML = (today.getDate()<10?"0":"") + today.getDate();
 miniday.innerHTML = weekDays[today.getDay()];
 minimonth.innerHTML = allMonths[today.getMonth()];
 miniyear.innerHTML = today.getFullYear();
-
-// Big calendar js
-
