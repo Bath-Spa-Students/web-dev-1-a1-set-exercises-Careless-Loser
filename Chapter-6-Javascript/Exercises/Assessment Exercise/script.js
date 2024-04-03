@@ -1,5 +1,5 @@
 window.onload = function() {
-    alert("Welcome to our petrol station!");
+    alert("Welcome to Spec Petrol Station!");
     alert("Please select the type of petrol you need and enter the amount.");
 };
 
@@ -11,7 +11,7 @@ document.getElementById('calculateBtn').addEventListener('click', function() {
             pricePerLiter = 2.00; // Super (98) price per liter
             break;
         case 'special':
-            pricePerLiter = 1.80; // Special (95) price per liter
+            pricePerLiter = 1.72; // Special (95) price per liter
             break;
         case 'diesel':
             pricePerLiter = 1.50; // Diesel price per liter
