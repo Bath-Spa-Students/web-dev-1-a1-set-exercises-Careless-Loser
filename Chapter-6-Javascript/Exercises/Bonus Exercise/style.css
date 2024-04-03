@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(0, 21, 80);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    max-width: 600px;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#levels {
+    margin-bottom: 20px;
+}
+
+.level {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 100px;
+}
+
+#colorDisplay {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+#options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.option {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#hearts {
+    margin-bottom: 20px;
+}
+
+.heart {
+    width: 30px;
+    height: auto;
+}
+
+#message {
+    margin-bottom: 20px;
+}
+
+#reset {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none; /* initially hidden */
+}
